@@ -1,0 +1,5 @@
+C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\obj\Debug\net7.0\EFCoreTaller.csproj.AssemblyReference.cache
+C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\obj\Debug\net7.0\EFCoreTaller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\obj\Debug\net7.0\EFCoreTaller.AssemblyInfoInputs.cache
+C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\obj\Debug\net7.0\EFCoreTaller.AssemblyInfo.cs
+C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\obj\Debug\net7.0\EFCoreTaller.csproj.CoreCompileInputs.cache
