@@ -230,7 +230,7 @@ namespace EFCoreTaller
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Producto>().ToTable("producto"); //Tablas
-            modelBuilder.Entity<Persona>().ToTable("persona");
+            modelBuilder.Entity<Persona>().ToTable("persona"); //Tabla Prsona
             modelBuilder.Entity<Cliente>().ToTable("cliente");
             modelBuilder.Entity<Empresa>().ToTable("empresa");
             modelBuilder.Entity<Factura>().ToTable("factura");
