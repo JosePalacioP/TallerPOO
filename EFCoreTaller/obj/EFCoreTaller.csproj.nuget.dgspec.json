@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj": {}
+    "C:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj": {
+    "C:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj",
+        "projectUniqueName": "C:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj",
         "projectName": "EFCoreTaller",
-        "projectPath": "c:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj",
+        "projectPath": "C:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\EFCoreTaller.csproj",
         "packagesPath": "C:\\Users\\jose_\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\obj\\",
+        "outputPath": "C:\\Users\\jose_\\OneDrive\\Documentos\\Proyectos VS Code\\Taller\\EFCoreTaller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
