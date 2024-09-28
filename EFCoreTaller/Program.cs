@@ -542,21 +542,22 @@ namespace EFCoreTaller
     {
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Persona> Personas { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<ProductosPorFactura> ProductosPorFacturas { get; set; }
-        public DbSet<Vendedor> Vendedores { get; set; }
+        // Elimina estos DbSet
+        // public DbSet<Cliente> Clientes { get; set; }
+        // public DbSet<Vendedor> Vendedores { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Asegúrate de que la cadena de conexión sea correcta
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Taller;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFCoreExampleDB;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configurar tablas y claves primarias si es necesario
+            // Configurar tablas
             modelBuilder.Entity<Producto>().ToTable("producto");
             modelBuilder.Entity<Persona>().ToTable("persona");
             modelBuilder.Entity<Cliente>().ToTable("cliente");
@@ -564,6 +565,15 @@ namespace EFCoreTaller
             modelBuilder.Entity<Factura>().ToTable("factura");
             modelBuilder.Entity<ProductosPorFactura>().ToTable("productosPorFactura");
             modelBuilder.Entity<Vendedor>().ToTable("vendedor");
+
+            // Configurar claves primarias
+            modelBuilder.Entity<Persona>().HasKey(p => p.Id);
+            modelBuilder.Entity<Factura>().HasKey(f => f.numero);
+            modelBuilder.Entity<Producto>().HasKey(p => p.Id);
+            modelBuilder.Entity<ProductosPorFactura>().HasKey(pf => pf.Id);
+            // No configures claves primarias en Cliente y Vendedor
+            // modelBuilder.Entity<Cliente>().HasKey(c => c.Id);
+            // modelBuilder.Entity<Vendedor>().HasKey(v => v.Id);
 
             // Configurar relaciones
             modelBuilder.Entity<Empresa>()
@@ -575,6 +585,13 @@ namespace EFCoreTaller
                 .HasOne(f => f.productoXFactura)
                 .WithMany()
                 .OnDelete(DeleteBehavior.Cascade);
+
+            // Opcional: Configurar discriminadores para TPH (opcional, EF Core lo maneja automáticamente)
+            modelBuilder.Entity<Persona>()
+                .HasDiscriminator<string>("TipoPersona")
+                .HasValue<Persona>("Persona")
+                .HasValue<Cliente>("Cliente")
+                .HasValue<Vendedor>("Vendedor");
         }
     }
 

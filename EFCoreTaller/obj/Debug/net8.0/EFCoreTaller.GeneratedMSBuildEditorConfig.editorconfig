@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EFCoreTaller
-build_property.ProjectDir = c:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\
+build_property.ProjectDir = C:\Users\jose_\OneDrive\Documentos\Proyectos VS Code\Taller\EFCoreTaller\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

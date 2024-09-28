@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFCoreTaller")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35feedc00f01e061b83be2588c1f33b63626afc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFCoreTaller")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFCoreTaller")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
