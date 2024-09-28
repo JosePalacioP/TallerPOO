@@ -551,7 +551,7 @@ namespace EFCoreTaller
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Asegúrate de que la cadena de conexión sea correcta
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFCoreExampleDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Taller;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
